@@ -1,0 +1,58 @@
+.viewport {
+  position: relative;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  width: max-content;
+  animation: supporting-logos-marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.group {
+  display: flex;
+  flex: none;
+  gap: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.viewport:hover .track,
+.viewport:focus-within .track {
+  animation-play-state: paused;
+}
+
+@keyframes supporting-logos-marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 48rem) {
+  .group {
+    gap: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .viewport {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-color: rgb(255 255 255 / 45%) transparent;
+    scrollbar-width: thin;
+  }
+
+  .track {
+    animation: none;
+    will-change: auto;
+  }
+
+  .duplicate {
+    display: none;
+  }
+}

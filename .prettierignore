@@ -1,0 +1,15 @@
+.next/
+node_modules/
+coverage/
+out/
+build/
+.pnpm-store/
+pnpm-lock.yaml
+pnpm-workspace.yaml
+next-env.d.ts
+.github/
+docs/
+public/
+**/README.md
+AGENTS.md
+CLAUDE.md
