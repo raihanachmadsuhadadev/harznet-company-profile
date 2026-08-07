@@ -76,7 +76,32 @@ harznet-company-profile/
 
 ## Screenshots
 
-Screenshot aplikasi dapat ditambahkan pada folder `docs/screenshots/`.
+### Beranda
+![Beranda](docs/screenshots/01.beranda.png)
+
+### Harznet Home
+![Harznet Home](docs/screenshots/02.harznet-home.png)
+
+### Corporate Bandwith
+![Corporate Badnwith](docs/screenshots/03.corporate-bandwith.png)
+
+### Partner
+![Partner](docs/screenshots/04.partner.png)
+
+### Managed Service
+![Managed Service](docs/screenshots/05.managed-service.png)
+
+### Software Corporation
+![Managed Service](docs/screenshots/06.software-corporation.png)
+
+### Tentang Kami
+![Tentang Kami](docs/screenshots/07.tentang-kami.png)
+
+### Informasi
+![Informasi](docs/screenshots/08.informasi.png)
+
+### Kuisioner
+![Kuisioner](docs/screenshots/09.kuisioner.png)
 
 ## Persiapan Environment
 
