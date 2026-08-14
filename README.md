@@ -1,25 +1,33 @@
 # HARZNET Company Profile
 
-HARZNET Company Profile adalah website company profile berbasis Next.js yang digunakan untuk menampilkan informasi perusahaan, layanan, area cakupan, identitas brand, dan informasi kontak HARZNET secara modern dan responsif.
+HARZNET Company Profile is a public-facing company profile website built with Next.js to present business information, internet services, service coverage, brand identity, and contact access in a modern and responsive interface.
 
-## Ringkasan Sistem
+The website is designed to help visitors understand HARZNET’s company profile, available services, coverage information, business identity, and contact channels across desktop and mobile devices.
 
-Project ini merupakan public-facing company profile website yang dirancang untuk membantu pengunjung memahami profil bisnis HARZNET, layanan yang tersedia, identitas brand, informasi cakupan, serta akses kontak perusahaan. Konten disusun dalam halaman publik dan detail layanan agar informasi dapat ditemukan dengan jelas pada perangkat desktop maupun mobile.
+## System Overview
+
+This project is a public company profile and marketing website for HARZNET. It contains a landing page, service detail pages, company information pages, supporting information pages, contact access, and basic SEO configuration.
+
+The content structure is arranged to make service information easier to explore, including residential internet service, corporate bandwidth, partnership opportunities, managed services, and software corporation information.
 
 ## Developer Role
 
-- Menganalisis kebutuhan konten dan struktur halaman company profile.
-- Menyusun struktur halaman website agar informasi perusahaan, layanan, dan kontak mudah dipahami pengunjung.
-- Mengembangkan frontend website menggunakan Next.js.
-- Membuat tampilan responsif untuk desktop dan mobile.
-- Menyiapkan struktur project, dokumentasi README, dan konfigurasi dasar pengembangan.
-- Menyesuaikan komponen, layout, dan section website berdasarkan kebutuhan company profile.
+The development responsibilities in this project included:
+
+- Analyzing company profile content requirements and public website structure.
+- Structuring website pages so visitors can clearly understand the company, services, coverage, and contact information.
+- Developing the frontend website using Next.js, React, TypeScript, and Tailwind CSS.
+- Creating responsive layouts for desktop and mobile devices.
+- Preparing reusable layout, page, and section components.
+- Setting up project structure, README documentation, and basic development configuration.
+- Adjusting components, layout, and website sections based on company profile needs.
+- Preparing screenshot documentation for portfolio presentation.
 
 ## Tech Stack
 
 ### Frontend
 
-- Next.js 16 dengan App Router
+- Next.js 16 with App Router
 - React 19
 - TypeScript
 
@@ -27,101 +35,139 @@ Project ini merupakan public-facing company profile website yang dirancang untuk
 
 - Tailwind CSS 4
 - Global CSS
-- CSS Modules untuk styling komponen tertentu
+- CSS Modules for selected component styling
+
+### Testing & Quality
+
+- ESLint
+- Prettier
+- Vitest
+- Testing Library
+- Playwright
 
 ### Tools
 
 - pnpm
 - Git
-- ESLint dan Prettier
-- Vitest dan Testing Library
-- Playwright
 
-## Fitur Utama
+## Main Features
 
-- Landing page company profile dengan hero, informasi perusahaan, ringkasan layanan, testimoni, dan call-to-action.
-- Halaman detail untuk HARZNET Home, Corporate Bandwidth, Partner, Managed Service, dan Software Corporation.
-- Halaman publik untuk informasi perusahaan, artikel informasi, media unduhan, kontak, kuesioner, kebijakan privasi, dan syarat ketentuan.
-- Formulir kontak dengan validasi dan pengiriman email melalui konfigurasi SMTP.
-- Navigasi desktop, navigasi mobile, dropdown layanan, footer, dan tombol kontak WhatsApp.
-- Responsive layout untuk berbagai ukuran layar.
-- Metadata halaman, sitemap, dan robots configuration untuk kebutuhan SEO dasar.
-- Penanganan halaman tidak ditemukan dan application error.
+- Company profile landing page with hero section, company information, service summary, testimonials, and call-to-action.
+- Service detail pages for HARZNET Home, Corporate Bandwidth, Partner, Managed Service, and Software Corporation.
+- Public pages for company information, information articles, downloadable media, contact, questionnaire, privacy policy, and terms and conditions.
+- Contact form with validation and SMTP-based email configuration.
+- Desktop navigation, mobile navigation, service dropdown, footer, and WhatsApp contact button.
+- Responsive layout for multiple screen sizes.
+- Page metadata, sitemap, and robots configuration for basic SEO needs.
+- Not-found page and application error handling.
 
-## Struktur Project
+## Page Coverage
+
+The website includes the following main public sections:
+
+- Home / Landing Page
+- HARZNET Home
+- Corporate Bandwidth
+- Partner
+- Managed Service
+- Software Corporation
+- About Us
+- Information
+- Questionnaire
+- Contact
+- Privacy Policy
+- Terms and Conditions
+
+## Project Structure
 
 ```text
 harznet-company-profile/
-|-- docs/                 # Dokumentasi teknis dan pengembangan
-|-- e2e/                  # Pengujian end-to-end dengan Playwright
+|-- docs/                 # Technical and development documentation
+|-- e2e/                  # End-to-end testing with Playwright
 |-- public/
-|   `-- images/           # Aset gambar publik
+|   `-- images/           # Public image assets
 |-- src/
-|   |-- actions/          # Server action, termasuk pengiriman formulir kontak
-|   |-- app/              # Route, layout, metadata, sitemap, dan robots
-|   |-- components/       # Komponen UI, layout, halaman, dan section reusable
-|   |-- config/           # Konfigurasi publik website
-|   |-- content/          # Konten lokal bertipe TypeScript
-|   |-- features/         # Modul berbasis fitur atau domain
-|   |-- lib/              # Helper, validasi, email, dan utilitas SEO
-|   |-- services/         # Adapter layanan publik
-|   |-- test/             # Setup dan fixture pengujian
-|   `-- types/            # Type dan interface bersama
-|-- .env.example          # Contoh konfigurasi environment
-|-- package.json          # Dependency dan script project
-|-- pnpm-lock.yaml        # Lockfile pnpm
-|-- next.config.ts        # Konfigurasi Next.js
-`-- README.md             # Dokumentasi project
+|   |-- actions/          # Server actions, including contact form submission
+|   |-- app/              # Routes, layout, metadata, sitemap, and robots
+|   |-- components/       # Reusable UI, layout, page, and section components
+|   |-- config/           # Public website configuration
+|   |-- content/          # Local typed content
+|   |-- features/         # Feature or domain-based modules
+|   |-- lib/              # Helpers, validation, email, and SEO utilities
+|   |-- services/         # Public service adapters
+|   |-- test/             # Testing setup and fixtures
+|   `-- types/            # Shared types and interfaces
+|-- .env.example          # Environment configuration example
+|-- package.json          # Dependencies and scripts
+|-- pnpm-lock.yaml        # pnpm lockfile
+|-- next.config.ts        # Next.js configuration
+`-- README.md             # Project documentation
 ```
 
 ## Screenshots
 
-### Beranda
-![Beranda](docs/screenshots/01.beranda.png)
+### Home
 
-### Harznet Home
-![Harznet Home](docs/screenshots/02.harznet-home.png)
+![Home](docs/screenshots/01.beranda.png)
 
-### Corporate Bandwith
-![Corporate Badnwith](docs/screenshots/03.corporate-bandwith.png)
+### HARZNET Home
+
+![HARZNET Home](docs/screenshots/02.harznet-home.png)
+
+### Corporate Bandwidth
+
+![Corporate Bandwidth](docs/screenshots/03.corporate-bandwith.png)
 
 ### Partner
+
 ![Partner](docs/screenshots/04.partner.png)
 
 ### Managed Service
+
 ![Managed Service](docs/screenshots/05.managed-service.png)
 
 ### Software Corporation
-![Managed Service](docs/screenshots/06.software-corporation.png)
 
-### Tentang Kami
-![Tentang Kami](docs/screenshots/07.tentang-kami.png)
+![Software Corporation](docs/screenshots/06.software-corporation.png)
 
-### Informasi
-![Informasi](docs/screenshots/08.informasi.png)
+### About Us
 
-### Kuisioner
-![Kuisioner](docs/screenshots/09.kuisioner.png)
+![About Us](docs/screenshots/07.tentang-kami.png)
 
-## Persiapan Environment
+### Information
 
-Pastikan perangkat pengembangan telah memiliki:
+![Information](docs/screenshots/08.informasi.png)
 
-- Node.js yang kompatibel dengan Next.js 16
+### Questionnaire
+
+![Questionnaire](docs/screenshots/09.kuisioner.png)
+
+## Requirements
+
+Make sure the local development environment has:
+
+- Node.js compatible with Next.js 16
 - pnpm 10
 - Git
 
 ## Installation
 
+Clone the repository:
+
 ```bash
 git clone https://github.com/raihanachmadsuhadadev/harznet-company-profile.git
 cd harznet-company-profile
+```
+
+Install dependencies:
+
+```bash
 pnpm install
 ```
 
 ## Environment Example
 
-Salin `.env.example` menjadi `.env.local`, kemudian isi konfigurasi sesuai environment yang digunakan.
+Copy `.env.example` to `.env.local`, then fill in the required configuration based on the local or deployment environment.
 
 ```env
 SMTP_HOST=
@@ -136,44 +182,79 @@ CONTACT_EMAIL_TO=
 CONTACT_MAP_EMBED_URL=
 ```
 
-Variabel `SMTP_*` dan `CONTACT_EMAIL_*` digunakan untuk pengiriman pesan dari formulir kontak. `CONTACT_MAP_EMBED_URL` digunakan untuk menampilkan peta pada area kontak apabila URL yang valid tersedia. Jangan menyimpan credential pada source code atau mengeksposnya melalui variabel publik.
+The `SMTP_*` and `CONTACT_EMAIL_*` variables are used for contact form email delivery. `CONTACT_MAP_EMBED_URL` is used to display a map in the contact section when a valid URL is available.
 
-## Menjalankan Aplikasi
+Never commit credentials or expose private values through public environment variables.
 
-Jalankan development server:
+## Running the Application
+
+Run the development server:
 
 ```bash
 pnpm dev
 ```
 
-Buka [http://localhost:3000](http://localhost:3000) melalui browser.
+Open the application in the browser:
+
+```text
+http://localhost:3000
+```
 
 ## Build
 
-Buat production build:
+Create a production build:
 
 ```bash
 pnpm build
 ```
 
-Jalankan hasil build:
+Run the production build locally:
 
 ```bash
 pnpm start
 ```
 
+## Testing
+
+Run unit or integration tests:
+
+```bash
+pnpm test
+```
+
+Run end-to-end tests if the Playwright setup is available:
+
+```bash
+pnpm playwright test
+```
+
+If script names differ, check `package.json` for the available commands.
+
 ## Project Status
 
-Project ini merupakan company profile website berbasis Next.js dengan halaman utama, halaman layanan, halaman informasi pendukung, dan kanal kontak. Pengembangan berikutnya dapat mencakup peningkatan SEO, pengelolaan konten, penyempurnaan integrasi formulir kontak, analytics, deployment configuration, dan optimasi performa.
+**Completed**
 
-## Catatan Pengembangan Lanjutan
+This project has been completed as a Next.js company profile website with a landing page, service pages, supporting public pages, contact channel, responsive layout, screenshot documentation, and basic SEO structure.
 
-- Menambahkan atau merapikan konten halaman company profile.
-- Menambahkan SEO metadata.
-- Menambahkan optimasi performa gambar.
-- Menambahkan contact form.
-- Menambahkan integrasi analytics.
-- Menambahkan deployment configuration.
-- Menambahkan sitemap dan robots.txt.
-- Menambahkan accessibility improvement.
-- Menambahkan responsive testing untuk berbagai ukuran layar.
+## Future Improvements
+
+Potential improvements include:
+
+- Further SEO metadata refinement.
+- Image performance optimization.
+- Content management integration.
+- Analytics integration.
+- Contact form delivery monitoring.
+- Accessibility improvements.
+- Deployment configuration refinement.
+- Responsive testing across more device sizes.
+
+## Project Scope
+
+This project focuses on a public company profile and marketing website.
+
+It intentionally does not include customer login, billing, ISP management dashboard, customer portal, payment features, or operational ISP system workflows.
+
+## Purpose
+
+This project was developed as a portfolio and company profile project to demonstrate skills in Next.js frontend development, responsive UI implementation, content structuring, SEO preparation, public website development, and professional project documentation.
